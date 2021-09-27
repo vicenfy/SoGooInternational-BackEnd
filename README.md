@@ -1,6 +1,5 @@
-# Restful-API-with-Spring-Boot-and-PostgreSQL
-Lưu ý khi test API:
-  1) Phải có postgreSQL trên máy
-  2) Tạo database "smartphones".
-  3) Trước khi test API thì hãy thêm username vào spring.datasource.username.
-  4) Làm tương tự với password.
+# SoGoo International GmbH Website Backend
+## Restful-API-with-Spring-Boot-and-PostgreSQL
+To test API:
+  1) Prepare your PostgreSQL environment
+  2) Set up username and password via spring.datasource.username.
