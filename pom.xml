@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>CRUD-webservices-smartPhone</artifactId>
+	<artifactId>SoGoo-webservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CRUD-webservices-smartPhone</name>
+	<name>SoGoo-webservices</name>
 	<description>Spring Boot Web Services</description>
 	<properties>
 		<java.version>11</java.version>
