@@ -32,61 +32,48 @@ public class Camera {
     @Column(name = "product_model")
     private String productModel;
 
-    @NotNull
     @Column(columnDefinition="TEXT", name = "product_introduction")
     private String productIntroduction;
 
 //Type#resolution#Data Interface#MonoColor#Digital I/O#Power supply#Lens Interface#Dimension#Weight#Temperature#Humidity#Client software#Certification
 //  Type:像素（什么类型的相机）
-    @NotNull
     @Column(name = "type")
     private String type;
 
-    @NotNull
     @Column(name = "resolution")
     private String resolution;
 
     //接口
-    @NotNull
     @Column(name = "data_interface")
     private String dataInterface;
 
-    @NotNull
     @Column(name = "mono_color")
     private String monoColor;
 
-    @NotNull
     @Column(name = "digital_io")
     private String digitalIO;
 
-    @NotNull
     @Column(name = "power_supply")
     private String powerSupply;
 
     @Column(name = "lens_interface")
     private String lensInterface;
 
-    @NotNull
     @Column(name = "dimension")
     private String dimension;
 
-    @NotNull
     @Column(name = "weight")
     private String weight;
 
-    @NotNull
     @Column(name = "temperature")
     private String temperature;
 
-    @NotNull
     @Column(name = "humidity")
     private String humidity;
 
-    @NotNull
     @Column(name = "client_software")
     private String clientSoftware;
 
-    @NotNull
     @Column(name = "certification")
     private String certification;
 
