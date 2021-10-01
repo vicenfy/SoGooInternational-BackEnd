@@ -19,8 +19,10 @@ public class CameraController {
 
     //get all cameras
     @GetMapping("cameras")
-    public List<Camera> getAllCameras() {
-        return this.cameraRepository.findAll();
+    public List<Camera> getAllCameras(@RequestParam(value = "productType", required = false, defaultValue = "") String productType) {
+        if (productType != "")
+            return cameraRepository.findByProductType(productType);
+        return cameraRepository.findAll();
     }
 
     //get camera by ID
@@ -31,10 +33,10 @@ public class CameraController {
     }
 
     //add camera
-    @PostMapping("cameras")
-    public Camera createCamera(@Valid @RequestBody Camera camera) {
-        return cameraRepository.save(camera);
-    }
+//    @PostMapping("cameras")
+//    public Camera createCamera(@Valid @RequestBody Camera camera) {
+//        return cameraRepository.save(camera);
+//    }
 
     //    // Update smart phone by id
 //    @PutMapping("smartphones/{id}")
