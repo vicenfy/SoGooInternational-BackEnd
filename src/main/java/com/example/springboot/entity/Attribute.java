@@ -11,6 +11,10 @@ public class Attribute {
     private Long id;
 
     @NotNull
+    @Column(name = "code")
+    private String code;
+
+    @NotNull
     @Column(name = "name")
     private String name;
 
@@ -36,6 +40,14 @@ public class Attribute {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getLanguageCode() {
