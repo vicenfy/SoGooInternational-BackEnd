@@ -20,7 +20,7 @@ public class CameraController {
     //get all cameras
     @GetMapping("cameras")
     public List<Camera> getAllCameras(@RequestParam(value = "productType", required = false, defaultValue = "") String productType) {
-        if (productType != "")
+        if (!productType.equals(""))
             return cameraRepository.findByProductType(productType);
         return cameraRepository.findAll();
     }

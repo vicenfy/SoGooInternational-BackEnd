@@ -23,8 +23,8 @@ public class Attribute {
     private String languageCode;
 
     @NotNull
-    @Column(name = "table_name")
-    private String tableName;
+    @Column(name = "object_code")
+    private String objectCode;
 
     public Long getId() {
         return id;
@@ -58,11 +58,11 @@ public class Attribute {
         this.languageCode = languageCode;
     }
 
-    public String getTableName() {
-        return tableName;
+    public String getObjectCode() {
+        return objectCode;
     }
 
-    public void setTableName(String tableName) {
-        this.tableName = tableName;
+    public void setObjectCode(String objectCode) {
+        this.objectCode = objectCode;
     }
 }
