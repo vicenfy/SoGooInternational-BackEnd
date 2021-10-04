@@ -8,7 +8,7 @@ public class ASCamera extends Camera {
     public ASCamera() {
         super();
     }
-//#sensor#Sensor type#Pixel size#Sensor size#Dynamic range#SNR#Gain#Exposure time#Pixel format#Image buffer#Power consumption#Ingress protection#Compatibility#Operating system  这块AC和LC相机都有
+//#Sensor#Sensor type#Pixel size#Sensor size#Dynamic range#SNR#Gain#Exposure time#Pixel format#Image buffer#Power consumption#Ingress protection#Compatibility#Operating system  这块AC和LC相机都有
 //#Max. Frame Rate#Shutter mode#Binning#Decimation#Reverse image 特有
     @Column(name = "sensor")
     private String sensor;
