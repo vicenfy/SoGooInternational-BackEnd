@@ -2,7 +2,7 @@ package com.example.springboot.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "odf_sgi_as_cameras")
+@Table(name = "odf_sgi_ls_cameras")
 @PrimaryKeyJoinColumn(name="id")
 public class LSCamera extends Camera {
     public LSCamera() {
